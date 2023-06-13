@@ -6,6 +6,7 @@ from scipy.stats import norm
 class PINN:
     def __init__(self, layers, optimizer, r, sigma):
         self.model = tf.keras.Sequential(layers)
+        self.model.summary()
         self.optimizer = optimizer
         self.r = r  # risk-free interest rate
         self.sigma = sigma  # volatility
@@ -51,16 +52,20 @@ class PINN:
         plt.plot(S, V_pred, 'b*', label='Predicted')
         plt.legend()
         plt.show()
-
-# Define the neural network architecture and optimizer
+kappa = 2000
 layers = [
-    tf.keras.layers.Dense(200, activation=tf.nn.tanh, input_shape=(2,)),  # input shape is 2 for (S, t)
-    tf.keras.layers.Dense(200, activation=tf.nn.tanh),
-    tf.keras.layers.Dense(200, activation=tf.nn.tanh),
-    tf.keras.layers.Dense(200, activation=tf.nn.tanh),
+    tf.keras.layers.Dense(kappa, activation=tf.nn.tanh, input_shape=(2,)),  # input shape is 2 for (S, t)
+    tf.keras.layers.Dropout(0.5),  # dropout layer for regularization
+    tf.keras.layers.Dense(kappa, activation=tf.nn.relu),
+    tf.keras.layers.Dense(kappa, activation=tf.nn.selu),
+    tf.keras.layers.Flatten(),
+    tf.keras.layers.Dense(kappa, activation=tf.nn.relu),
+    tf.keras.layers.Dropout(0.5),  # another dropout layer
+    tf.keras.layers.Dense(kappa, activation=tf.nn.tanh),
+    tf.keras.layers.Flatten(),  # flatten layer to reshape the output for the final layer
     tf.keras.layers.Dense(1)
 ]
-optimizer = tf.keras.optimizers.Adam()
+optimizer = tf.keras.optimizers.Adam(learning_rate=0.00001)
 
 # Create the PINN
 pinn = PINN(layers, optimizer, r=0.05, sigma=0.2)
@@ -87,7 +92,7 @@ S_train, t_train, V_train = generate_data(N)
 
 
 # Train the PINN
-pinn.train(S_train, t_train, V_train, epochs=1000)
+pinn.train(S_train, t_train, V_train, epochs=10000)
 
 # Plot the results
 pinn.plot(S_train, t_train, V_train)
