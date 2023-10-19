@@ -1,0 +1,493 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{a4paper}
+\usepackage{hyperref}
+\usepackage{xurl}
+
+\title{Business Plan for Drones' BLDC Motor Driver/ESC Enhanced by Physics-Informed Neural Networks}
+\author{Ehsan KhademOlama}
+\date{\today}
+
+\begin{document}
+	
+	\maketitle
+	
+	\tableofcontents
+	\newpage
+	
+	\section{Executive Summary and Introduction}
+	\subsection{Executive Summary}
+	
+	The drone industry is poised for exponential growth. Central to this revolution is the need for efficient and intelligent Brushless DC Motor Drivers and Electronic Speed Controls (ESC) that are both affordable and readily available. Our project aims to fill this gap by leveraging the power of Physics Informed Neural Networks (PINN) to create a next-generation ESC that can adapt to a wide range of speeds and torques. Unlike traditional solutions that rely solely on microcontrollers, our technology will utilize Field-Programmable Gate Arrays (FPGA) and Application-Specific Integrated Circuits (ASIC) for enhanced performance and adaptability.
+	
+	With a budget of around 30,000€ and a timeline of 6 to 9 months, this business plan outlines our strategy for market entry and long-term sustainability. From market research and MVP development to financial projections and customer acquisition, we have laid out a comprehensive roadmap for success.
+	
+	Our focus on innovation, customer experience, and regulatory compliance sets us apart, making this not just a business venture but a leap towards the future of drone technology.
+	
+	\subsection{Project Overview}
+	This business plan outlines the development and implementation of a cutting-edge technology for Drones' Brushless DC Motor Driver/Electronic Speed Control (ESC) using Physics-Informed Neural Networks (PINNs). The project aims to revolutionize the drone industry by providing a more efficient, reliable, and cost-effective solution for BLDC motor control.
+	
+	\subsection{Objectives}
+	\begin{itemize}
+		\item To develop a Physics-Informed Neural Network (PINN) that can efficiently control a BLDC motor across a wide range of speeds and torques.
+		\item To validate the technology through rigorous testing and pilot programs.
+		\item To acquire necessary certifications and comply with regulations.
+		\item To bring the product to market within a competitive timeframe.
+	\end{itemize}
+	
+	\subsection{Timeframe and Budget}
+	The project is planned to be completed within a 6 to 9-month timeframe. The estimated budget for the project is approximately 30,000€, which includes costs for BLDC motors, test equipment, data gathering infrastructure, PINN training infrastructure, and software licenses. A detailed cost estimation is provided in the Cost Estimation section.
+			
+	\section{Market Research}
+	\subsection{Drone and Quadcopter Market}
+		\begin{itemize}
+			\item The global drone market size is estimated at USD 38.03 billion in 2023 and is expected to reach USD 62.43 billion by 2028, growing at a CAGR of 10.42\% \cite{mordorintelligence}.
+			\item The commercial drone market was valued at USD 19.89 billion in 2022 and is expected to grow at a CAGR of 13.9\% from 2023 to 2030 \cite{grandviewresearch}.
+			\item The drone services market size is expected to grow to USD 63.6 billion by 2025 \cite{insiderintelligence}.
+		\end{itemize}
+	
+	\subsection{ESC for Drone's BLDC Market}
+		\begin{itemize}
+			\item The global drone market is expected to grow from USD 4.9 billion to USD 14.3 billion within the next decade, indicating a heavy demand for high-performance electric aircraft, including BLDC motors and ESCs \cite{umd}.
+			\item ESC modules are fundamental to drones, including a power supply stage, a current-sensing circuit, a microcontroller, and a communication interface with the flight control system \cite{powerelectronicsnews}.
+			\item Plettenberg, a global leader in inrunner BLDC motors, offers over 5,000 possible configurations for Electric Drone Motors and ESCs \cite{plettenberg}.
+		\end{itemize}
+	
+	\subsection{Competitive Analysis}
+		\begin{itemize}
+			\item Texas Instruments is a key player in the ESC market, providing comprehensive solutions and guidelines for designing ESCs in drones. Their focus is on motor-control topology and ESC efficiency \cite{ti}.
+			\item The American Institute of Aeronautics and Astronautics has conducted performance testing and modeling of BLDC motors and ESCs, contributing to the scientific understanding of these components \cite{aiaa}.
+			\item ResearchGate published a paper on the design and implementation of ESCs for BLDC motors, emphasizing the need for closed-loop speed/position control in low-cost UAVs \cite{researchgate}.
+		\end{itemize}
+	
+	  \subsection{Target Audience}
+		\begin{itemize}
+			\item The primary target audience includes drone manufacturers and suppliers who focus on high-quality and reliable drive systems, including motors, ESCs, and propellers \cite{drive-tech}.
+			\item Another significant audience is the academic and research community, particularly those involved in senior capstone projects and drone technology research \cite{tufts}.
+			\item The growing global drone market, expected to reach \$14.3 billion within the next decade, indicates a broad target audience, including commercial and recreational drone users \cite{umd}.
+		\end{itemize}
+	
+	
+	\section{Minimum Viable Product (MVP)}
+		\subsection{Features}
+			\begin{itemize}
+				\item Prototype ESC for drone's BLDC motors.
+				\item Incorporation of Physics Informed Neural Networks for optimized control.
+			\end{itemize}
+	
+		\subsection{Technology Stack}
+			\begin{itemize}
+				\item Hardware platforms for algorithm implementation: FPGA and ASIC.
+				\item Software for neural network training and simulation.
+				\item PCB design software for ESC circuitry.
+			\end{itemize}
+	
+		\subsection{Development Plan}
+			\begin{itemize}
+				\item Initial prototyping will be done on FPGA due to its flexibility \cite{fpga-cost}.
+				\item ASIC will be considered for mass production once the algorithms are mature \cite{asic-cost}.
+				\item Budget for hardware implementation is set between 5000€ to 10000€.
+			\end{itemize}
+		
+	\section{Financial Projections}
+		\subsection{Cost Estimation}
+		\subsubsection{Software Costs}
+		\begin{itemize}
+			\item MATLAB/Simulink License: Commercial use licenses for MATLAB and Simulink can vary in price. It is advisable to request a quote for the specific needs of the project \cite{matlab-cost}.
+		\end{itemize}
+		
+		\subsubsection{Laboratory Setup}
+		\begin{itemize}
+			\item The cost of setting up a laboratory for drone's BLDC motors and ESCs is not readily available. However, it is crucial for testing and development \cite{lab-setup}.
+			\item Test Equipment: Around 3,000€ for oscilloscopes, multimeters, and other necessary tools.
+			\item Data Gathering Infrastructure: About 4,000€ for sensors, data loggers, and real-time monitoring systems.
+		\end{itemize}
+		
+		\subsubsection{University Collaboration}
+		\begin{itemize}
+			\item TU Darmstadt has research facilities focused on drone technology, which could potentially reduce the cost of laboratory setup through collaboration \cite{tu-darmstadt}.
+		\end{itemize}
+		
+		\subsubsection{Additional Costs}
+		\begin{itemize}
+			\item BLDC Motors: Approximately 2,000€ for various types and sizes.
+			\item PINN Training Infrastructure: Roughly 5,000€ for high-performance computing resources.
+			\item Software Licenses: Additional costs for VHDL IDEs and PCB Design Software amount to 2,500€.
+			\item Open Source Software: Can reduce software costs by up to 30\%, but may require additional time for customization and integration.
+		\end{itemize}
+		
+		\textbf{Total Estimated Cost}: Approximately 29,500€, leaving a small buffer within the 30,000€ budget for unexpected expenses.
+		
+		\begin{table}[h]
+			\centering
+			\begin{tabular}{|l|l|}
+				\hline
+				\textbf{Category} & \textbf{Estimated Cost} \\
+				\hline
+				High-speed BLDC Motors & 500€ \\
+				Low-speed BLDC Motors & 400€ \\
+				High-torque BLDC Motors & 600€ \\
+				General-purpose BLDC Motors & 500€ \\
+				\hline
+				Oscilloscope & 1,200€ \\
+				Multimeter & 300€ \\
+				Dynamometer & 1,500€ \\
+				\hline
+				Sensors & 1,000€ \\
+				Data loggers & 1,500€ \\
+				Real-time monitoring systems & 1,500€ \\
+				\hline
+				GPU Server & 3,000€ \\
+				Cloud Computing & 2,000€ \\
+				\hline
+				MATLAB/Simulink License & 2,000€ per year \\
+				VHDL IDEs & 1,000€ \\
+				PCB Design Software & 1,500€ \\
+				\hline
+				Potential cost reduction (Open Source) & 3,000€ \\
+				Additional customization time (Open Source) & 1,000€ \\
+				\hline
+				\textbf{Total Estimated Cost} & \textbf{Approximately 29,500€} \\
+				\hline
+			\end{tabular}
+			\caption{Detailed Cost Estimation}
+		\end{table}
+		
+			
+		\subsection{Revenue Streams}
+			\begin{itemize}
+				\item \textbf{Product Sales}: The primary revenue stream will come from the sales of ESCs with integrated Physics Informed Neural Networks. These ESCs will be marketed to drone manufacturers and hobbyists.
+				\item \textbf{Licensing}: An additional revenue stream could be generated by licensing the Physics Informed Neural Network algorithms to drone manufacturers. This would provide a steady income without the need for manufacturing \cite{revenue-streams}.
+				\item \textbf{Custom Solutions}: Offering custom ESC solutions for specific drone applications can also be a lucrative revenue stream.
+				\item \textbf{After-Sales Services}: Providing maintenance and software updates can generate ongoing revenue.
+			\end{itemize}
+			
+		\subsection{Return on Investment (ROI)}
+			\begin{itemize}
+				\item \textbf{Projected ROI}: Based on the market research and the estimated costs, a projected ROI will be calculated. This will take into account the fast ROI observed in drone-related investments \cite{roi-report}.
+				\item \textbf{Break-Even Analysis}: A detailed break-even analysis will be conducted to determine the point at which the investment will start generating profits.
+				\item \textbf{Long-Term ROI}: Consideration will also be given to long-term ROI, factoring in potential market growth and technological advancements.
+			\end{itemize}
+		
+	
+	\section{Customer Acquisition}
+		\subsection{Marketing Channels}
+			\begin{itemize}
+				\item \textbf{Online Marketing}: Utilizing social media platforms and search engine optimization to attract potential customers.
+				\item \textbf{Trade Shows}: Participating in drone and technology trade shows to showcase the product and network with industry professionals.
+				\item \textbf{Educational Partnerships}: Collaborating with educational institutions like TU Darmstadt for pilot testing and initial exposure.
+			\end{itemize}
+	
+		\subsection{Sales Strategy}
+			\begin{itemize}
+				\item \textbf{Direct Sales}: Employing a sales team to directly approach potential large-scale customers like drone manufacturers.
+				\item \textbf{Retail Partnerships}: Collaborating with retail stores specializing in drone and RC hobbyist supplies to stock the product.
+				\item \textbf{B2B Partnerships}: Forming business-to-business relationships for bulk sales and licensing opportunities.
+			\end{itemize}
+	
+	
+	\section{Key Performance Indicators (KPIs)}
+		\begin{itemize}
+			\item \textbf{Total Addressable Market (TAM)}: Measures the potential market size to determine the number of customers that can be attracted \cite{indeed-kpi}.
+			\item \textbf{Revenue from Sales}: Tracks the income generated from the sales of drones and ESCs \cite{financialmodeltemplates}.
+			\item \textbf{Customer Retention Rate}: Monitors the percentage of customers who continue to buy or interact with the product over a specific time period.
+			\item \textbf{Cost Reduction}: Evaluates the effectiveness of cost-saving measures in production and operations.
+			\item \textbf{Innovation Rate}: Measures the number of new features or products introduced within a specific time frame.
+			\item \textbf{Product Quality Metrics}: Tracks the number of product returns or defects as an indicator of product quality.
+			\item \textbf{Customer Satisfaction}: Utilizes customer feedback and reviews to gauge satisfaction levels.
+		\end{itemize}
+		
+	
+	\section{Regulatory and Compliance Checks}
+	\begin{itemize}
+		\item \textbf{Drone Laws and Regulations}: Understanding and adhering to local, national, and international drone laws \cite{drone-laws}.
+		\item \textbf{Safety Measures}: Implementing safety measures such as geo-fencing and collision avoidance systems \cite{safety-first}.
+		\item \textbf{Certifications}: Obtaining necessary certifications for drone operations, including FAA or equivalent in other countries \cite{uas-operators}.
+		\item \textbf{Data Privacy}: Ensuring data collected by drones is stored and used in compliance with data privacy laws.
+		\item \textbf{Environmental Compliance}: Making sure the drones do not harm the environment, including wildlife.
+		\item \textbf{EMI Certificates}: Complying with EMI (Electromagnetic Interference) requirements, particularly in Germany and the USA \cite{emi-germany} \cite{emi-usa}.
+	\end{itemize}
+	
+	
+	\section{Pilot Testing}
+		\subsection{Test Plan}
+			\begin{itemize}
+				\item \textbf{FAA Exam}: Preparing and passing the FAA drone pilot exam \cite{faa-exam}.
+				\item \textbf{Practice Exercises}: Engaging in drone pilot practice exercises to improve flying skills \cite{practice-exercises}.
+				\item \textbf{Beginner Drones}: Starting with a cheap, easy-to-learn drone for initial practice \cite{beginner-drones}.
+				\item \textbf{PINN Learning}: Implementing and testing the Physics Informed Neural Networks (PINN) for driving the BLDC motor across various speeds and torques.
+			\end{itemize}
+		\subsection{Metrics for Success}
+			\begin{itemize}
+				\item \textbf{Test Score}: Aiming for a high score in the FAA exam.
+				\item \textbf{Skill Level}: Measuring improvements in flying skills through practice exercises.
+				\item \textbf{Crash Rate}: Reducing the crash rate during practice sessions.
+				\item \textbf{PINN Performance}: Evaluating the success of the PINN in accurately driving the BLDC motor.
+			\end{itemize}
+	
+	\section{Feedback Loop}
+		\subsection{Customer Feedback}
+			\begin{itemize}
+				\item \textbf{Surveys}: Conducting online surveys to gather customer opinions \cite{enterprise-league}.
+				\item \textbf{User Testing}: Organizing user testing sessions for the drone's BLDC Motor Driver/ESC \cite{wise-business-plans}.
+			\end{itemize}
+		\subsection{Product Iteration}
+			\begin{itemize}
+				\item \textbf{PINN Updates}: Regularly updating the Physics Informed Neural Networks (PINN) based on real-world performance.
+				\item \textbf{Hardware Revisions}: Making necessary hardware changes based on customer feedback and testing results.
+			\end{itemize}
+	
+	\section{Time Schedule}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Phase} & \textbf{Milestone} & \textbf{Timeframe} \\
+		\hline
+		Research & Market Analysis & Month 1 \\
+		\hline
+		MVP Development & PINN Algorithm & Month 1-2 \\
+		\hline
+		MVP Development & Hardware Prototyping & Month 2-3 \\
+		\hline
+		Regulatory & EMI Certification & Month 3 \\
+		\hline
+		Pilot Testing & FAA Exam & Month 4 \\
+		\hline
+		Pilot Testing & User Testing & Month 4-5 \\
+		\hline
+		Feedback Loop & Customer Surveys & Month 5 \\
+		\hline
+		Feedback Loop & Product Iteration & Month 5-6 \\
+		\hline
+		Launch & Soft Launch & Month 6 \\
+		\hline
+		Launch & Full Launch & Month 7 \\
+		\hline
+		Post-Launch & Performance Analysis & Month 8-9 \\
+		\hline
+	\end{tabular}
+		
+	\section{Conclusion and Final Remarks}
+	In the rapidly evolving landscape of drone technology, our project stands as a beacon of innovation and practicality. Leveraging the power of Physics Informed Neural Networks (PINN), we aim to revolutionize the way Brushless DC Motors are driven in drones. Our comprehensive business plan outlines a roadmap that is both ambitious and achievable, designed to take us from concept to market in less than nine months.
+	
+	As we navigate through this journey, we are not just building a product; we are crafting an experience that will redefine drone piloting. Our focus on regulatory compliance, customer feedback, and continuous improvement will ensure that we not only meet but exceed market expectations.
+	
+	We invite you to join us on this exciting venture, as we soar to new heights in drone technology.
+	
+	\section{Risk Assessment and Potential Problems (External Viewer)}
+	
+	\subsection{Executive Summary and Introduction}
+	\begin{enumerate}
+		\item \textbf{Over-Reliance on Innovation}: The plan heavily relies on Physics-Informed Neural Networks (PINN) for a next-gen ESC. If this technology fails to deliver as expected, the whole project could be at risk.
+		\item \textbf{Budget and Timeline}: A budget of around 30,000€ and a 6 to 9-month timeline may be too optimistic for developing a groundbreaking technology.
+	\end{enumerate}
+	
+	\subsection{Market Research}
+	\begin{enumerate}
+		\item \textbf{Data Sources}: The plan cites various market research data but doesn't specify the reliability of these sources.
+		\item \textbf{Competitive Analysis}: The plan mentions key players like Texas Instruments but doesn't outline a strategy to compete with them.
+	\end{enumerate}
+	
+	\subsection{Financial Projections}
+	\begin{enumerate}
+		\item \textbf{Cost Estimation}: The estimated costs are very close to the budget limit, leaving little room for unforeseen expenses.
+		\item \textbf{Revenue Streams}: The plan mentions multiple revenue streams but doesn't provide a detailed strategy for each.
+	\end{enumerate}
+	
+	\subsection{Regulatory and Compliance Checks}
+	\begin{enumerate}
+		\item \textbf{Certifications}: Obtaining necessary certifications can be time-consuming and costly, potentially delaying the project.
+		\item \textbf{Data Privacy}: The plan mentions data privacy but doesn't elaborate on how it will comply with regulations like GDPR.
+	\end{enumerate}
+	
+	\subsection{Pilot Testing}
+	\begin{enumerate}
+		\item \textbf{FAA Exam}: Preparing and passing the FAA drone pilot exam is mentioned, but the time and cost involved are not accounted for.
+		\item \textbf{Metrics for Success}: The plan lacks a detailed framework for measuring the success of the pilot tests.
+	\end{enumerate}
+	
+	\subsection{Feedback Loop}
+	\begin{enumerate}
+		\item \textbf{Customer Feedback}: While surveys and user testing are mentioned, there's no strategy for how this feedback will be integrated into product development.
+	\end{enumerate}
+	
+	\subsection{Time Schedule}
+	\begin{enumerate}
+		\item \textbf{Optimistic Timeframes}: The plan outlines a very tight schedule, which could be problematic if any phase gets delayed.
+	\end{enumerate}
+	
+		
+	\section{References}
+	\begin{thebibliography}{9}
+		\bibitem{mordorintelligence}
+		Mordor Intelligence,
+		\textit{Drones Market Share, Report, Forecast \& Analysis},
+		\url{https://www.mordorintelligence.com/industry-reports/drones-market}.
+		
+		\bibitem{grandviewresearch}
+		Grand View Research,
+		\textit{Commercial Drone Market Size, Share \& Trends Report 2030},
+		\url{https://www.grandviewresearch.com/industry-analysis/global-commercial-drones-market}.
+		
+		\bibitem{insiderintelligence}
+		Insider Intelligence,
+		\textit{Drone market outlook in 2023: industry growth trends and forecast},
+		\url{https://www.insiderintelligence.com/insights/drone-industry-analysis-market-trends-growth-forecasts/}.
+		
+		\bibitem{umd}
+		UMD,
+		\textit{Characterization and Modeling of Brushless DC Motors and ESCs},
+		\url{https://drum.lib.umd.edu/handle/1903/25410}.
+		
+		\bibitem{powerelectronicsnews}
+		Power Electronics News,
+		\textit{Designing an ESC Module to Control Drone Motors},
+		\url{https://www.powerelectronicsnews.com/designing-an-esc-module-to-control-drone-motors/}.
+		
+		\bibitem{plettenberg}
+		Plettenberg,
+		\textit{Electric Drone Motors, Generators \& Starters for UAV},
+		\url{https://www.unmannedsystemstechnology.com/company/plettenberg/}.
+		
+		\bibitem{quadcopter-arena}
+		Quadcopter Arena,
+		\textit{How to Choose Motor for Quadcopter},
+		\url{https://quadcopterarena.com/how-to-choose-motor-for-quadcopter/}.
+		
+		\bibitem{ti}
+		Texas Instruments,
+		\textit{Motor-control considerations for electronic speed control in drones},
+		\url{https://www.ti.com/lit/an/slyt692/slyt692.pdf}.
+		
+		\bibitem{aiaa}
+		American Institute of Aeronautics and Astronautics,
+		\textit{Performance Testing and Modeling of a Brushless DC Motor, Electronic},
+		\url{https://arc.aiaa.org/doi/10.2514/6.2018-4584}.
+		
+		\bibitem{researchgate}
+		ResearchGate,
+		\textit{Design and Implementation of an Electronic Speed Controller for Brushless DC motors},
+		\url{https://www.researchgate.net/publication/317958200_Design_and_Implementation_of_an_Electronic_Speed_Controller_for_Brushless_DC_motors}.
+		
+		  \bibitem{drive-tech}
+		Drive Tech,
+		\textit{The transition to brushless dc motors was key},
+		\url{https://drive.tech/en/stream-content/the-transition-to-brushless-dc-motors-was-key}.
+		
+		\bibitem{tufts}
+		Tufts University,
+		\textit{Why Walk When You Can Fly? Drone Motors and ESCs},
+		\url{https://sites.tufts.edu/eeseniordesignhandbook/files/2021/05/Pond_DroneMotorsAndESCs.pdf}.
+		
+		  \bibitem{fpga-cost}
+		Springer,
+		\textit{New paradigm of FPGA-based computational intelligence},
+		\url{https://link.springer.com/article/10.1007/s10617-021-09256-8}.
+		
+		\bibitem{asic-cost}
+		Auburn University,
+		\textit{ASIC Project Cost},
+		\url{https://www.eng.auburn.edu/~nelson/courses/elec5250_6250/slides/Lecture%202%20-%20ASIC%20Cost.pdf}.
+		
+		  \bibitem{bldc-cost}
+		ScienceDirect,
+		\textit{Design optimization of drone BLDC motor for delivery service applications},
+		\url{https://www.sciencedirect.com/science/article/pii/S2214785323042657}.
+		
+		\bibitem{operational-cost}
+		ResearchGate,
+		\textit{Design And Construction of Octocopter Agricultural Drone},
+		\url{https://www.researchgate.net/publication/359068644_Design_And_Construction_of_Octocopter_Agricultural_Drone}.
+		
+		\bibitem{revenue-streams}
+		UMD,
+		\textit{Characterization and Modeling of Brushless DC Motors and ESCs},
+		\url{https://drum.lib.umd.edu/handle/1903/25410}.
+		
+		\bibitem{roi-report}
+		Construction Dive,
+		\textit{Report: 92\% of firms using drones see ROI within one year},
+		\url{https://www.constructiondive.com/news/report-92-of-firms-using-drones-see-roi-within-one-year/526684/}.
+		
+		  \bibitem{matlab-cost}
+		MathWorks,
+		\textit{Pricing and Licensing MATLAB},
+		\url{https://www.mathworks.com/pricing-licensing.html}.
+		
+		\bibitem{lab-setup}
+		Unmanned Systems Technology,
+		\textit{Inrunner BLDC Motors for UAV Applications},
+		\url{https://www.unmannedsystemstechnology.com/feature/inrunner-bldc-motors-for-uav-applications/}.
+		
+		\bibitem{tu-darmstadt}
+		TU Darmstadt,
+		\textit{DACUS - Flight Systems and Automatic Control},
+		\url{https://www.fsr.tu-darmstadt.de/forschung_und_dienstleistung/forschungsfelder_neu/dacus.en.jsp}.
+		
+		  \bibitem{indeed-kpi}
+		Indeed,
+		\textit{8 Key Performance Indicators for a Startup Company To Use},
+		\url{https://www.indeed.com/career-advice/career-development/key-performance-indicators-for-startups}.
+		
+		\bibitem{financialmodeltemplates}
+		Financial Model Templates,
+		\textit{Maximize Your Drone Business Success with Essential KPIs},
+		\url{https://financialmodeltemplates.com/blogs/blog/drone-manufacturing-kpi-metrics}.
+		
+		  \bibitem{drone-laws}
+		Drone Laws,
+		\textit{Drone Laws [By Countries, States, Cities]},
+		\url{https://drone-laws.com/}.
+		
+		\bibitem{safety-first}
+		ECDronePros,
+		\textit{Safety First: Ensuring Regulations and Compliance in Drone Services},
+		\url{https://ecdronepros.com/safety-first-ensuring-regulations-and-compliance-in-drone-services/}.
+		
+		\bibitem{uas-operators}
+		AV8Prep,
+		\textit{Regulatory Compliance and Safety Measures for UAS Operators},
+		\url{https://www.av8prep.com/aviation-library/part-107-drone/regulatory-compliance-and-safety-measures-for-uas-operators}.
+				
+		  \bibitem{emi-germany}
+		TÜV Rheinland,
+		\textit{Electromagnetic Compatibility (EMC) Testing in Germany},
+		\url{https://www.tuv.com/usa/en/electromagnetic-compatibility-(emc).html}.
+		
+		\bibitem{emi-usa}
+		TÜV SÜD,
+		\textit{EMC/EMI Testing Labs in US and Canada},
+		\url{https://www.tuvsud.com/en-us/services/testing/electromagnetic-compatibility-testing}.
+		
+		  \bibitem{faa-exam}
+		Pilot Institute,
+		\textit{Part 107 Practice Exam (25 Questions)},
+		\url{https://pilotinstitute.com/part-107-practice-test/}.
+		
+		\bibitem{practice-exercises}
+		DroneDJ,
+		\textit{These drone pilot practice exercises can improve skills},
+		\url{https://dronedj.com/2020/07/16/drone-pilot-practice-exercises/}.
+		
+		\bibitem{beginner-drones}
+		Pilot Institute,
+		\textit{How to Become a Drone Pilot: Step-by-Step Guide},
+		\url{https://pilotinstitute.com/how-to-become-a-drone-pilot/}.
+		
+		  \bibitem{enterprise-league}
+		Enterprise League,
+		\textit{39 innovative drone startups you should know (2023)},
+		\url{https://enterpriseleague.com/blog/drone-startups/}.
+		
+		\bibitem{wise-business-plans}
+		Wise Business Plans,
+		\textit{40 Profitable Drone Business Ideas to Start in 2023},
+		\url{https://wisebusinessplans.com/drone-business-ideas/}.
+		
+		\bibitem{firma-150a-esc}
+		Horizon Hobby,
+		\textit{Firma 150A Brushless Smart ESC 3S-6S Dual IC5},
+		\url{https://www.horizonhobby.de/en_DE/product/firma-150a-brushless-smart-esc-3s-6s-dual-ic5/SPMXSE1150.html}.
+				
+	\end{thebibliography}
+	
+\end{document}
